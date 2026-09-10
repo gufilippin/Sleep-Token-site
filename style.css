@@ -140,20 +140,33 @@ body {
 }
 
 /* Container de Links na Vertical à Direita */
+/* Container de Links na Vertical à Direita */
 .links-container {
     display: flex;
-    flex-direction: column; /* Alinhamento vertical */
+    flex-direction: column; /* Alinha os ícones na vertical */
     align-items: center;
-    gap: 20px;
-    justify-self: end;
+    justify-content: center;
+    gap: 22px; /* Espaçamento uniforme entre cada ícone */
     grid-column: 3;
-    margin-bottom: 20px;
+    justify-self: end;
+    margin-bottom: 25px;
 }
 
+.links-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;  /* Define uma área quadrada fixa para todos os links */
+    height: 28px;
+}
+
+/* Padroniza o tamanho visual exato de todas as imagens das plataformas */
 .platform-icon {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    max-width: 26px;
+    max-height: 26px;
+    object-fit: contain; /* Mantém a proporção sem distorcer */
     opacity: 0.85;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -163,20 +176,21 @@ body {
     transform: scale(1.15);
 }
 
-/* Botão de Ação Arredondado abaixo dos ícones */
+/* Botão de Ação alinhado abaixo dos ícones */
 #listen\/watch-button {
     grid-column: 3;
     justify-self: end;
     background-color: transparent;
     color: #c9b07a;
     border: 1px solid #c9b07a;
-    border-radius: 20px; /* Bordas arredondadas como na imagem */
-    padding: 10px 24px;
-    font-size: 0.8rem;
+    border-radius: 20px;
+    padding: 10px 22px;
+    font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     cursor: pointer;
+    white-space: nowrap;
     transition: all 0.3s ease;
 }
 
@@ -184,7 +198,6 @@ body {
     background-color: #c9b07a;
     color: #0c120e;
 }
-
 /* Rodapé */
 footer {
     padding: 40px 20px;
