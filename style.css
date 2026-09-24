@@ -160,7 +160,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 60px;
     grid-column: 3;
     justify-self: end;
 }
@@ -177,8 +177,8 @@ body {
 
 /* Força o aumento das imagens dos ícones */
 .platform-icon {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     opacity: 0.9;
     transition: transform 0.2s ease, opacity 0.2s ease;
